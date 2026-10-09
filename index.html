@@ -239,190 +239,169 @@
    </footer>
   </div>
   <script>
-    const students = [
-  { nisn: "0091463242", name: "Reza Irawan", className: "XI.F3", division: "", status: "LOLOS" },
-  { nisn: "0103840159", name: "Davina Irullya Putri", className: "XI.F3", division: "", status: "LOLOS" },
-  { nisn: "0101504245", name: "Alifa Hilda Vanesa", className: "XI.F1", division: "", status: "LOLOS" },
-  { nisn: "0105335143", name: "Husnum Hafidza", className: "XI.F3", division: "", status: "LOLOS" },
-  { nisn: "0118428767", name: "Naftali Zefanya Letichia", className: "X.E8", division: "", status: "LOLOS" },
-  { nisn: "0108050550", name: "Muhammad Syahzan", className: "X.E8", division: "", status: "LOLOS" },
-  { nisn: "0114204566", name: "Nona Nesya Puspita", className: "X.E7", division: "", status: "LOLOS" },
-  { nisn: "0106097436", name: "Bherta Adelia R.", className: "X.E8", division: "", status: "LOLOS" },
-  { nisn: "0118620191", name: "Aprilia Putri Devianita", className: "X.E8", division: "", status: "LOLOS" },
-  { nisn: "3108433109", name: "Nabila Fitri Fauziah", className: "X.E7", division: "", status: "LOLOS" },
-  { nisn: "0108228759", name: "Rafela Azahra Maylani", className: "X.E4", division: "", status: "LOLOS" },
-  { nisn: "0119474089", name: "Aldian Hafid", className: "X.E8", division: "", status: "LOLOS" },
-  { nisn: "0114066050", name: "Rifatu Khoiriyah", className: "X.E9", division: "", status: "LOLOS" },
-  { nisn: "0115680294", name: "Annisa Anindya", className: "X.E7", division: "", status: "LOLOS" },
-  { nisn: "0119872844", name: "Ayesha Ghania Sakhi", className: "X.E7", division: "", status: "LOLOS" },
-  { nisn: "0113744330", name: "Nabila Haya Syuga", className: "X.E1", division: "", status: "LOLOS" },
-  { nisn: "0103264740", name: "Adhecitra Rizky Ramadhanie", className: "X.E9", division: "", status: "LOLOS" },
-  { nisn: "0104787447", name: "Rakha Arrafa Syihabudin", className: "X.E7", division: "", status: "LOLOS" },
-  { nisn: "0118530080", name: "Nabil Asyaaqib K.", className: "X.E7", division: "", status: "LOLOS" },
-  { nisn: "0102877907", name: "Jesika Nur Soliha", className: "XI.F3", division: "", status: "LOLOS" },
-  { nisn: "0106958344", name: "Raffi Tri Fahreza", className: "XI.F5", division: "", status: "LOLOS" },
-  { nisn: "0112984094", name: "Sausan Nuha Sabrina", className: "X.E5", division: "", status: "LOLOS" },
-  { nisn: "0119027944", name: "Ghaitsa Nalcharonie", className: "X.E8", division: "", status: "LOLOS" },
-  { nisn: "0116062508", name: "Istiqomah", className: "X.E6", division: "", status: "LOLOS" },
-  { nisn: "0111179984", name: "Noura Fiqori Arnelita", className: "X.E7", division: "", status: "LOLOS" },
-  { nisn: "0102392963", name: "Katakanya Ananda P", className: "X.E1", division: "", status: "LOLOS" },
-  { nisn: "0105358933", name: "Chealsea Ata Kayla", className: "X.E4", division: "", status: "LOLOS" },
-  { nisn: "0116957382", name: "M Farabi Ramdhani A.", className: "X.E6", division: "", status: "LOLOS" },
-  { nisn: "0116181093", name: "Zahra Adhelia Sheren", className: "X.E7", division: "", status: "LOLOS" },
-  { nisn: "0102556365", name: "Felicia", className: "X.E8", division: "", status: "LOLOS" },
-  { nisn: "0119105155", name: "Kesya Shelbia Q.", className: "X.E4", division: "", status: "LOLOS" },
-  { nisn: "0114314708", name: "Najah Putri Sabrina", className: "X.E7", division: "", status: "LOLOS" },
-  { nisn: "0112220050", name: "Anis Arista Julianda Sari", className: "X.E7", division: "", status: "LOLOS" },
-  { nisn: "0112600064", name: "Devan Damario Wibowo", className: "X.E4", division: "", status: "LOLOS" },
-  { nisn: "3011203060", name: "Jovy Triputra Witdianto", className: "XI.F5", division: "", status: "LOLOS" },
-  { nisn: "0107692491", name: "Reza Agung Alfarizi", className: "XI.F5", division: "", status: "LOLOS" }
-  { nisn: "0118418441", name: "Nadhifah Nasywa Fadhilah", className: "X.E8", division: "", status: "LOLOS" },
-  { nisn: "0113387205", name: "Bintang Ibnu haris", className: "X.E5", division: "", status: "LOLOS" },
-  { nisn: "0113248561", name: "FEBI YOLA PUTRI", className: "X.E2", division: "", status: "LOLOS" }];
-const dataTidakLolos = [
-  { nisn: "0109692723", name: "CAMELIA DEWI ANGGRAENI", className: "X.E5", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0104144465", name: "SHERIN AULIA RAMDHANI", className: "X.E1", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0104239040", name: "Nismara Maheswari", className: "X.E1", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0111745580", name: "EGO EMENZA", className: "X.E4", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0109577043", name: "MUHAMMAD AFRIZAL", className: "XI.F5", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0112380820", name: "azka ridhwa faeisal", className: "X.E7", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0116891278", name: "Rexti Hikmaya", className: "-", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0114814794", name: "kanaya aura zhunita purwansyah", className: "X.E2", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0112424736", name: "AISYAH AQILAH PUTRI", className: "X.E2", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0112855983", name: "FRISKA AYU KHOIRUNISA", className: "X.E4", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0113659275", name: "SILVIA NADIA PUTRI", className: "X.E3", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0115053392", name: "endira sisca oktavioni", className: "X.E5", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0108091679", name: "Tiara Claudia Sari", className: "X.E3", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0115222746", name: "TRIYA ANANTI SAPUTRI", className: "X.E4", division: "", status: "TIDAK LOLOS" },
-  { nisn: "96334092", name: "Rafa Akbar Yudisanda", className: "XI.F5", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0115900139", name: "JANUA TIFANKA", className: "X.E4", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0112091262", name: "Alesya Jingga Purnama Sari", className: "X.E5", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0092282856", name: "Kaira aulia agata", className: "X.E5", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0102294476", name: "Eldgaar Rickhi Yandika", className: "XI.F4", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0104122814", name: "Naila Ahya Maulida", className: "X.E4", division: "", status: "TIDAK LOLOS" },
-  { nisn: "3108002024", name: "Occa Wili Brilian", className: "X.E5", division: "", status: "TIDAK LOLOS" },
-  { nisn: "0107710857", name: "fany deswita putri", className: "X.E4", division: "", status: "TIDAK LOLOS" },
-  { nisn: "105422349", name: "Kelin Leoni Apriliana", className: "X.E9", division: "", status: "TIDAK LOLOS" }];
+    <script>
+  const students = [
+    { nisn: "0091463242", name: "Reza Irawan", className: "XI.F3", division: "", status: "LOLOS" },
+    { nisn: "0103840159", name: "Davina Irullya Putri", className: "XI.F3", division: "", status: "LOLOS" },
+    { nisn: "0101504245", name: "Alifa Hilda Vanesa", className: "XI.F1", division: "", status: "LOLOS" },
+    { nisn: "0105335143", name: "Husnum Hafidza", className: "XI.F3", division: "", status: "LOLOS" },
+    { nisn: "0118428767", name: "Naftali Zefanya Letichia", className: "X.E8", division: "", status: "LOLOS" },
+    { nisn: "0108050550", name: "Muhammad Syahzan", className: "X.E8", division: "", status: "LOLOS" },
+    { nisn: "0114204566", name: "Nona Nesya Puspita", className: "X.E7", division: "", status: "LOLOS" },
+    { nisn: "0106097436", name: "Bherta Adelia R.", className: "X.E8", division: "", status: "LOLOS" },
+    { nisn: "0118620191", name: "Aprilia Putri Devianita", className: "X.E8", division: "", status: "LOLOS" },
+    { nisn: "3108433109", name: "Nabila Fitri Fauziah", className: "X.E7", division: "", status: "LOLOS" },
+    { nisn: "0108228759", name: "Rafela Azahra Maylani", className: "X.E4", division: "", status: "LOLOS" },
+    { nisn: "0119474089", name: "Aldian Hafid", className: "X.E8", division: "", status: "LOLOS" },
+    { nisn: "0114066050", name: "Rifatu Khoiriyah", className: "X.E9", division: "", status: "LOLOS" },
+    { nisn: "0115680294", name: "Annisa Anindya", className: "X.E7", division: "", status: "LOLOS" },
+    { nisn: "0119872844", name: "Ayesha Ghania Sakhi", className: "X.E7", division: "", status: "LOLOS" },
+    { nisn: "0113744330", name: "Nabila Haya Syuga", className: "X.E1", division: "", status: "LOLOS" },
+    { nisn: "0103264740", name: "Adhecitra Rizky Ramadhanie", className: "X.E9", division: "", status: "LOLOS" },
+    { nisn: "0104787447", name: "Rakha Arrafa Syihabudin", className: "X.E7", division: "", status: "LOLOS" },
+    { nisn: "0118530080", name: "Nabil Asyaaqib K.", className: "X.E7", division: "", status: "LOLOS" },
+    { nisn: "0102877907", name: "Jesika Nur Soliha", className: "XI.F3", division: "", status: "LOLOS" },
+    { nisn: "0106958344", name: "Raffi Tri Fahreza", className: "XI.F5", division: "", status: "LOLOS" },
+    { nisn: "0112984094", name: "Sausan Nuha Sabrina", className: "X.E5", division: "", status: "LOLOS" },
+    { nisn: "0119027944", name: "Ghaitsa Nalcharonie", className: "X.E8", division: "", status: "LOLOS" },
+    { nisn: "0116062508", name: "Istiqomah", className: "X.E6", division: "", status: "LOLOS" },
+    { nisn: "0111179984", name: "Noura Fiqori Arnelita", className: "X.E7", division: "", status: "LOLOS" },
+    { nisn: "0102392963", name: "Katakanya Ananda P", className: "X.E1", division: "", status: "LOLOS" },
+    { nisn: "0105358933", name: "Chealsea Ata Kayla", className: "X.E4", division: "", status: "LOLOS" },
+    { nisn: "0116957382", name: "M Farabi Ramdhani A.", className: "X.E6", division: "", status: "LOLOS" },
+    { nisn: "0116181093", name: "Zahra Adhelia Sheren", className: "X.E7", division: "", status: "LOLOS" },
+    { nisn: "0102556365", name: "Felicia", className: "X.E8", division: "", status: "LOLOS" },
+    { nisn: "0119105155", name: "Kesya Shelbia Q.", className: "X.E4", division: "", status: "LOLOS" },
+    { nisn: "0114314708", name: "Najah Putri Sabrina", className: "X.E7", division: "", status: "LOLOS" },
+    { nisn: "0112220050", name: "Anis Arista Julianda Sari", className: "X.E7", division: "", status: "LOLOS" },
+    { nisn: "0112600064", name: "Devan Damario Wibowo", className: "X.E4", division: "", status: "LOLOS" },
+    { nisn: "3011203060", name: "Jovy Triputra Witdianto", className: "XI.F5", division: "", status: "LOLOS" },
+    { nisn: "0107692491", name: "Reza Agung Alfarizi", className: "XI.F5", division: "", status: "LOLOS" },
+    { nisn: "0118418441", name: "Nadhifah Nasywa Fadhilah", className: "X.E8", division: "", status: "LOLOS" },
+    { nisn: "0113387205", name: "Bintang Ibnu haris", className: "X.E5", division: "", status: "LOLOS" },
+    { nisn: "0113248561", name: "FEBI YOLA PUTRI", className: "X.E2", division: "", status: "LOLOS" },
+    // Data Tidak Lolos dimasukkan langsung ke array students:
+    { nisn: "0109692723", name: "CAMELIA DEWI ANGGRAENI", className: "X.E5", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0104144465", name: "SHERIN AULIA RAMDHANI", className: "X.E1", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0104239040", name: "Nismara Maheswari", className: "X.E1", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0111745580", name: "EGO EMENZA", className: "X.E4", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0109577043", name: "MUHAMMAD AFRIZAL", className: "XI.F5", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0112380820", name: "azka ridhwa faeisal", className: "X.E7", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0116891278", name: "Rexti Hikmaya", className: "-", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0114814794", name: "kanaya aura zhunita purwansyah", className: "X.E2", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0112424736", name: "AISYAH AQILAH PUTRI", className: "X.E2", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0112855983", name: "FRISKA AYU KHOIRUNISA", className: "X.E4", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0113659275", name: "SILVIA NADIA PUTRI", className: "X.E3", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0115053392", name: "endira sisca oktavioni", className: "X.E5", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0108091679", name: "Tiara Claudia Sari", className: "X.E3", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0115222746", name: "TRIYA ANANTI SAPUTRI", className: "X.E4", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0096334092", name: "Rafa Akbar Yudisanda", className: "XI.F5", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0115900139", name: "JANUA TIFANKA", className: "X.E4", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0112091262", name: "Alesya Jingga Purnama Sari", className: "X.E5", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0092282856", name: "Kaira aulia agata", className: "X.E5", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0102294476", name: "Eldgaar Rickhi Yandika", className: "XI.F4", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0104122814", name: "Naila Ahya Maulida", className: "X.E4", division: "", status: "TIDAK LOLOS" },
+    { nisn: "3108002024", name: "Occa Wili Brilian", className: "X.E5", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0107710857", name: "fany deswita putri", className: "X.E4", division: "", status: "TIDAK LOLOS" },
+    { nisn: "0105422349", name: "Kelin Leoni Apriliana", className: "X.E9", division: "", status: "TIDAK LOLOS" }
+  ];
 
-    const form = document.getElementById("nisn-form");
-    const nisnInput = document.getElementById("nisn-input");
-    const formMessage = document.getElementById("form-message");
-    const resultPanel = document.getElementById("result-panel");
+  const form = document.getElementById("nisn-form");
+  const nisnInput = document.getElementById("nisn-input");
+  const formMessage = document.getElementById("form-message");
+  const resultPanel = document.getElementById("result-panel");
+  const adminArea = document.getElementById("admin-area");
+  const adminForm = document.getElementById("admin-form");
+  const adminCommand = document.getElementById("admin-command");
+  const adminMessage = document.getElementById("admin-message");
 
-    function showResult(matches) {
-      const first = matches[0];
-      document.getElementById("result-name").textContent = matches.length > 1
-        ? matches.map((student) => student.name + " — " + student.className + " — " + student.status).join(" | ")
-        : first.name;
-      document.getElementById("result-nisn").textContent = "NISN: " + first.nisn;
-      const status = document.getElementById("result-status");
-      status.textContent = matches.length > 1 ? "PERLU VERIFIKASI ADMIN" : first.status;
-      status.className = "inline-flex w-fit rounded-full px-4 py-2 text-sm font-extrabold tracking-wide " + (matches.length > 1 || first.status !== "LOLOS" ? "status-no-pass" : "status-pass");
-      resultPanel.classList.toggle("not-passed", matches.length > 1 || first.status !== "LOLOS");
-      resultPanel.classList.add("show");
-    }
-
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      const rawInput = String(nisnInput.value).trim();
-      if (rawInput === "0081831092" || /^ADMIN 0081831092$/i.test(rawInput)) {
-        formMessage.textContent = "";
-        adminMessage.textContent = "";
-        resultPanel.classList.remove("show");
-        adminArea.classList.add("show");
-        adminCommand.value = "";
-        return;
-      }
-      const nisn = rawInput.replace(/\s+/g, "");
-
-      if (!/^\d{10,12}$/.test(nisn)) {
-        resultPanel.classList.remove("show");
-        formMessage.textContent = "Masukkan NISN yang valid berupa angka tanpa mengubah digitnya.";
-        nisnInput.focus();
-        return;
-      }
-
-      const matches = students.filter((item) => String(item.nisn) === nisn);
-      if (!matches.length) {
-        resultPanel.classList.remove("show");
-        formMessage.textContent = "NISN belum terdaftar atau penulisannya perlu diperiksa.";
-        return;
-      }
-
-      formMessage.textContent = matches.length > 1
-        ? "NISN terdaftar pada lebih dari satu data dan perlu diverifikasi admin. Kedua data terkait ditampilkan di bawah."
-        : "";
-      adminArea.classList.remove("show");
-      showResult(matches);
-      resultPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    });
-
-    nisnInput.addEventListener("input", function () {
-      this.value = this.value.replace(/\D/g, "");
-      formMessage.textContent = "";
-    });
-
-    function renderAdminRows() {
-      const body = document.getElementById("admin-table-body");
-      students.forEach(function (student, index) {
-        const row = document.createElement("tr");
-        row.className = "transition hover:bg-[#f5fafb]";
-        const statusClass = student.status === "LOLOS" ? "status-pass" : "status-no-pass";
-        row.innerHTML =
-          "<td class='px-5 py-4 text-sm text-[#617284]'>" + (index + 1) + "</td>" +
-          "<td class='px-5 py-4 text-sm font-medium text-[#18324a]'>" + student.nisn + "</td>" +
-          "<td class='px-5 py-4 text-sm font-semibold text-[#18324a]'>" + student.name + "</td>" +
-          "<td class='px-5 py-4 text-sm text-[#465d70]'>" + student.division + "</td>" +
-          "<td class='px-5 py-4'><span class='inline-flex rounded-full px-3 py-1 text-xs font-extrabold " + statusClass + "'>" + student.status + "</span></td>";
-        body.appendChild(row);
-      });
-    }
-
-    const adminForm = document.getElementById("admin-form");
-    const adminCommand = document.getElementById("admin-command");
-    const adminMessage = document.getElementById("admin-message");
-    const adminArea = document.getElementById("admin-area");
-
-    adminForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-      const command = adminCommand.value.trim();
-      if (command === "0081831092" || /^ADMIN 0081831092$/i.test(command)) {
-        resultPanel.classList.remove("show");
-        formMessage.textContent = "";
-        adminMessage.textContent = "";
-        adminArea.classList.add("show");
-        adminArea.setAttribute("aria-label", "Mode Admin");
-        adminCommand.value = "";
-        return;
-      }
-      adminArea.classList.remove("show");
-      adminMessage.textContent = "";
-      nisnInput.value = command.replace(/\s/g, "");
-      form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
-    });
-
-    const countdownTarget = new Date("2026-10-01T21:30:00+07:00").getTime();
+  function showResult(matches) {
+    const first = matches[0];
+    document.getElementById("result-name").textContent = matches.length > 1
+      ? matches.map((student) => student.name + " — " + student.className + " — " + student.status).join(" | ")
+      : first.name;
+    document.getElementById("result-nisn").textContent = "NISN: " + first.nisn;
     
-    function updateCountdown() {
-      const difference = Math.max(0, countdownTarget - Date.now());
-      const totalSeconds = Math.floor(difference / 1000);
-      const days = Math.floor(totalSeconds / 86400);
-      const hours = Math.floor((totalSeconds % 86400) / 3600);
-      const minutes = Math.floor((totalSeconds % 3600) / 60);
-      const seconds = totalSeconds % 60;
+    const status = document.getElementById("result-status");
+    status.textContent = matches.length > 1 ? "PERLU VERIFIKASI ADMIN" : first.status;
+    
+    const isPass = matches.length === 1 && first.status === "LOLOS";
+    status.className = "inline-flex w-fit rounded-full px-4 py-2 text-sm font-extrabold tracking-wide " + (isPass ? "status-pass" : "status-no-pass");
+    
+    resultPanel.classList.toggle("not-passed", !isPass);
+    resultPanel.classList.add("show");
+  }
 
-      document.getElementById("days").textContent = String(days).padStart(2, "0");
-      document.getElementById("hours").textContent = String(hours).padStart(2, "0");
-      document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
-      document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const rawInput = String(nisnInput.value).trim();
+    
+    if (rawInput === "0081831092" || /^ADMIN 0081831092$/i.test(rawInput)) {
+      formMessage.textContent = "";
+      adminMessage.textContent = "";
+      resultPanel.classList.remove("show");
+      adminArea.classList.add("show");
+      adminCommand.value = "";
+      return;
+    }
+    
+    const nisn = rawInput.replace(/\s+/g, "");
+
+    if (!/^\d{8,12}$/.test(nisn)) {
+      resultPanel.classList.remove("show");
+      formMessage.textContent = "Masukkan NISN yang valid berupa angka tanpa mengubah digitnya.";
+      nisnInput.focus();
+      return;
     }
 
-    document.addEventListener("DOMContentLoaded", function () {
-      renderAdminRows();
-      updateCountdown();
-      setInterval(updateCountdown, 1000);
-      lucide.createIcons();
+    const matches = students.filter((item) => String(item.nisn) === nisn);
+    if (!matches.length) {
+      resultPanel.classList.remove("show");
+      formMessage.textContent = "NISN belum terdaftar atau penulisannya perlu diperiksa.";
+      return;
+    }
+
+    formMessage.textContent = matches.length > 1
+      ? "NISN terdaftar pada lebih dari satu data dan perlu diverifikasi admin. Kedua data terkait ditampilkan di bawah."
+      : "";
+    adminArea.classList.remove("show");
+    showResult(matches);
+    resultPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
+
+  nisnInput.addEventListener("input", function () {
+    this.value = this.value.replace(/\D/g, "");
+    formMessage.textContent = "";
+  });
+
+  function renderAdminRows() {
+    const body = document.getElementById("admin-table-body");
+    body.innerHTML = "";
+    students.forEach(function (student, index) {
+      const row = document.createElement("tr");
+      row.className = "transition hover:bg-[#f5fafb]";
+      const statusClass = student.status === "LOLOS" ? "status-pass" : "status-no-pass";
+      row.innerHTML =
+        "<td class='px-5 py-4 text-sm text-[#617284]'>" + (index + 1) + "</td>" +
+        "<td class='px-5 py-4 text-sm font-semibold text-[#18324a]'>" + student.name + "</td>" +
+        "<td class='px-5 py-4 text-sm text-[#465d70]'>" + student.className + "</td>" +
+        "<td class='px-5 py-4 text-sm font-medium text-[#18324a]'>" + student.nisn + "</td>" +
+        "<td class='px-5 py-4 text-sm text-[#465d70]'>" + (student.division || "-") + "</td>" +
+        "<td class='px-5 py-4'><span class='inline-flex rounded-full px-3 py-1 text-xs font-extrabold " + statusClass + "'>" + student.status + "</span></td>";
+      body.appendChild(row);
     });
-  </script>
- 
-</body></html>
+  }
+
+  renderAdminRows();
+
+  adminForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const cmd = adminCommand.value.trim();
+    if (cmd === "0081831092" || /^ADMIN 0081831092$/i.test(cmd)) {
+      adminArea.classList.toggle("show");
+      adminMessage.textContent = "";
+    } else {
+      adminMessage.textContent = "Kode akses admin salah.";
+    }
+  });
+</script>
